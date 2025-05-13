@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Usuário" class="input-field">
+        <input type="password" id="password" placeholder="Senha" class="input-field">
+        <button onclick="login()" class="btn">Entrar</button>
+        <p id="error-message" class="error-message"></p>
+        <p>Não possui uma conta? <a href="cadastroUsuario.html" class="link">Cadastre-se</a></p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/controllers.js"></script>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nome = document.getElementById('username').value;
+            const senha = document.getElementById('password').value;
+            LoginController.realizarLogin(nome, senha);
+        });
+    </script>
+    <footer class="app-footer">
+        <p>Versão: 1.0.0</p>
+        <p>Nome da Aplicação: Mexa-se</p>
+        <p>Equipe de Desenvolvimento: Grupo 31</p>
+        <p>Email para Contato: <a href="mailto:emailparacontato.mexa-se@email.com">emailparacontato.mexa-se@email.com</a></p>
+    </footer>
+</body>
+</html>
+
+

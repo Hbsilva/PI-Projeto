@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Atividades</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <div class="container">
+        <h1>Cadastrar Atividade</h1>
+        <input type="text" id="location" placeholder="Local">
+        <input type="date" id="date">
+        <input type="time" id="time">
+        <select id="activity">
+            <option value="Corrida ao ar livre">Corrida ao ar livre</option>
+            <option value="Caminhada">Caminhada</option>
+        </select>
+        <select id="range">
+            <option value=1>1 Km</option>
+            <option value=2>2 Km</option>
+            <option value=3>5 Km</option>
+            <option value=4>10 Km</option>
+        </select>
+        <input type="text" id="guests" placeholder="Convidados">
+        <button onclick="addActivity()">Adicionar Atividade</button>
+    </div>
+    <script src="js/script.js"></script>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="home.html" class="footer-btn">
+                <a href="home.html" class="footer-btn">🏠<span>Home</span></a>
+            </a>
+            <a href="atividades.html" class="footer-btn">
+                <a href="atividades.html" class="footer-btn">📅<span>Atividades</span></a>
+            </a>
+            <a href="amigos.html" class="footer-btn">
+                <a href="amigos.html" class="footer-btn">👥<span>Amizades</span></a>
+            </a>
+            <a href="perfil.html" class="footer-btn">
+                <a href="perfil.html" class="footer-btn">👤<span>Perfil</span></a>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+

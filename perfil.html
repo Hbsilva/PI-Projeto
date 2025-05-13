@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/controllers.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body onload="PerfilController.carregarPerfil()">
+    <div class="container">
+
+    <!-- Foto e Nome -->
+    <section class="perfil-container">
+        <div class="foto-perfil">
+            <input type="file" id="inputFoto" hidden onchange="PerfilController.carregarFoto(event)">
+            <img src="img/default-user.png" alt="Foto do usuário" id="fotoUsuario" onclick="document.getElementById('inputFoto').click()">
+        </div>
+        <h2 id="nomeUsuario">Nome Sobrenome</h2>
+    </section>
+
+    <!-- Indicadores -->
+    <section class="indicadores">
+        <div class="indicador">
+            <h3>Meta</h3>
+            <p id="metaKm">0 km</p>
+        </div>
+        <div class="indicador">
+            <h3>Amigos</h3>
+            <p id="quantidadeAmigos">0</p>
+        </div>
+    </section>
+
+    <!-- Barra de Progresso -->
+    <section class="progresso">
+        <h3>Progresso</h3>
+        <div class="barra-container">
+            <div id="barraProgresso" class="barra-progresso"></div>
+        </div>
+        <p id="statusKm">0 km de 0 km</p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+        <h3>Atividades Realizadas</h3>
+        <ul class="timeline-list">
+            <li class="timeline-item">
+                <h2>Corrida ao ar livre</h2>
+                <p>Data: 2024-11-01</p>
+                <p>Duração: 45 minutos</p>
+            </li>
+            <li class="timeline-item">
+                <h2>Futebol</h2>
+                <p>Data: 2024-11-02</p>
+                <p>Duração: 90 minutos</p>
+            </li>
+            <li class="timeline-item">
+                <h2>Musculação</h2>
+                <p>Data: 2024-11-03</p>
+                <p>Duração: 60 minutos</p>
+            </li>
+            <li class="timeline-item">
+                <h2>Ciclismo</h2>
+                <p>Data: 2024-11-04</p>
+                <p>Duração: 120 minutos</p>
+            </li>
+        </ul>
+    </section>
+
+    </div>
+    
+    <!-- Rodapé -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="home.html" class="footer-btn">🏠<span>Home</span></a>
+            <a href="atividades.html" class="footer-btn">📅<span>Atividades</span></a>
+            <a href="amigos.html" class="footer-btn">👥<span>Amizades</span></a>
+            <a href="perfil.html" class="footer-btn">👤<span>Perfil</span></a>
+        </nav>
+    </footer>
+
+</body>
+</html>
+

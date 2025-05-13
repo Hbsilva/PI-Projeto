@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de amigos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Amigos</h1>
+        <ul class="friend-list">
+            <li class="friend-item">
+                <span>Amigo 1</span>
+                <button class="icon-btn" onclick="openChat()">💬</button>
+            </li>
+            <li class="friend-item">
+                <span>Amigo 2</span>
+                <button class="icon-btn" onclick="openChat()">💬</button>
+            </li>
+            <!-- Mais amigos -->
+        </ul>
+        <button class="floating-btn" onclick="location.href='cadastroAmigos.html'">+</button>
+    </div>
+    <script>
+        function openChat() {
+            location.href = 'chat.html';
+        }
+    </script>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="home.html" class="footer-btn">
+                <a href="home.html" class="footer-btn">🏠<span>Home</span></a>
+            </a>
+            <a href="atividades.html" class="footer-btn">
+                <a href="atividades.html" class="footer-btn">📅<span>Atividades</span></a>
+            </a>
+            <a href="amigos.html" class="footer-btn">
+                <a href="amigos.html" class="footer-btn">👥<span>Amizades</span></a>
+            </a>
+            <a href="perfil.html" class="footer-btn">
+                <a href="perfil.html" class="footer-btn">👤<span>Perfil</span></a>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
