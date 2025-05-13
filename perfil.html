@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/controllers.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="controllers.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body onload="PerfilController.carregarPerfil()">
@@ -15,7 +15,7 @@
     <section class="perfil-container">
         <div class="foto-perfil">
             <input type="file" id="inputFoto" hidden onchange="PerfilController.carregarFoto(event)">
-            <img src="img/default-user.png" alt="Foto do usuário" id="fotoUsuario" onclick="document.getElementById('inputFoto').click()">
+            <img src="default-user.png" alt="Foto do usuário" id="fotoUsuario" onclick="document.getElementById('inputFoto').click()">
         </div>
         <h2 id="nomeUsuario">Nome Sobrenome</h2>
     </section>
